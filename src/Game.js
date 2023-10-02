@@ -141,7 +141,6 @@ const Game = () => {
         function LaughKey(id){
             var element = document.getElementById(id);
             if(element !== null && element !== 'undefined'){
-                console.log(element);
                 document.getElementById(id).style.color = '#18AA00';
                 document.getElementById(id).innerText = "ha";
                 delay(200).then(() => ClearSpot(id));

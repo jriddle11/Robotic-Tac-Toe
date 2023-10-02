@@ -9,7 +9,7 @@ body{
   background-color: rgb(235, 235, 235);
 }
 .navbar{
-  padding: 20px;
+  padding: 0px;
   display: flex;
   align-items: center;
   max-width: 100%;
