@@ -41,7 +41,7 @@ const TextForAbout = () => {
             <br />
             <p className="textMinMax">
             My name is <span className="bold blue">Josh Riddle</span>, I am a freelance developer and current university Junior studying computer science. This was the first ever website I created as I was learning
-            React and Javascript, I hope you liked it as much as I enjoyed making it. If you would like to hire me or just want to report an issue please contact me at: <a href = "mailto: riddlejosh11@gmail.com" className="green bold">riddlejosh11@gmail.com</a>
+            React and Javascript, I hope you liked it as much as I enjoyed making it. If you would like to contact me, please do at: <a href = "mailto: riddlejosh11@gmail.com" className="green bold">riddlejosh11@gmail.com</a>
             </p>
             <br />
             <br />
