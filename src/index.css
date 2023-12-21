@@ -1,66 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+.steveImage{
+  height:40rem;
+  width:30em;
+}
 
-* {
-  margin: 0;
-  font-family: "Quicksand";
-  color:black;
+@media screen and (max-width: 800px) {
+  html {
+      font-size: 9px;
+  }
+}
+
+.anim{
+  animation:badass 1s linear infinite;
 }
 body{
   background-color: rgb(235, 235, 235);
 }
 .navbar{
+  font-size: 5rem;
   padding: 0px;
+  width: 30rem;
+  height: 10rem;
   display: flex;
-  align-items: center;
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   border-bottom: 2px solid rgb(187, 187, 187);
-  background-color: #ffffff;
-  top: 0px;
-  position: fixed;
-  width: 100%;
+  background-color: RGB(50,50,50);
   z-index: 10000;
 }
-.navbar h1{
-  color: rgb(0, 0, 0);
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 20px;
+
+.steveType{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top:2rem;
 }
 
-.navbar .links{
-  margin-left: auto;
-  margin-top: 40px;
-  padding-right: 40px;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.navbar a{
-  margin-left: 16px;
+.steveButton{
+  height:4rem;
+  width:8rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border-radius: .4rem;
+  border: 2px solid black;
+  align-items: center;
+  align-content: center;
+  display:flex;
+  text-align: center;
   text-decoration: none;
-  padding: 6px;
-}
-.navbar .homeLink:hover{
-  color: #18AA00;
-}
-.navbar .aboutLink:hover{
-  color: rgb(0, 100, 205);
-}
-.content{
-  max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
 }
 
+.steveButton:hover{
+  background-color: RGB(50,50,50);
+}
+.steveButton:hover .link{
+  color:white;
+}
+.link{
+  margin-left: 1.8rem;
+  color: black;
+}
+.double{
+  margin-left: 1rem;
+}
 .home {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  margin-left: 600px;
-  float: left;
-  margin-top: 6%;
+  align-items: center;
+  justify-content: center;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -68,97 +77,18 @@ body{
   -o-user-select: none;
 }
 
-.about{
-  margin-top: 5%;
-}
-
-.scoreBoard{
-  background-color: #2b2b2b;
-  font-size: 50px;
-  font-weight: bold;
-  padding: 10px;
-  padding-right: 100px;
-  align-items: right;
-  justify-content: right;
-  float: left;
-  border-radius: 10px;
-  border: #b4b4b4 solid 10px;
-  margin-top : -560px;
-  margin-left: 500px;
-}
-
-.neck{
-margin-bottom: -200px;
-}
-
-.head{
-  margin-left: -280px;
-}
-
-.body{
-  margin-left: -150px;
-  margin-top: 100px;
-}
-
-.aboutText{
-  max-width: 60%;
-  padding-left: 300px;
-}
-
-.aboutText h1{
-  font-weight: bold;
-  font-size: 45px;
-}
-
-.underline{
-  text-decoration: underline;
-}
-
-.textMinMax{
-  font-size: 20px;
-  font-weight: 570;
-}
-.bold{
-  font-weight: bold;
-}
-
-.green{
-  color: #18AA00;
-}
-
-.blue{
-  color: rgb(0, 100, 205);
-}
-
-.game{
-  margin-top : -360px;
-  margin-left : -60px;
-  float: left;
-  align-items: left;
-  justify-content: left;
-}
-
 .App{
   align-items: center;
   justify-content: center;
   position: center;
   margin: auto;
-  width: 100%;
-  height: 931px;
-
 }
 
-button {
-  background-color: #131313;
-  border-radius: 10px;
-  font-size: 75px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  display: inline;
-  width: 100px;
-  height: 100px;
-  margin-top: 0px;
-  margin : 0px ,- 2px;
+@keyframes badass{
+  0%{
+    content: url('Images/bad1.png');
+  }
+  50%{
+    content: url('Images/bad2.png');
+  }
 }

@@ -1,21 +1,22 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import Santa from './Santa';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import About from './About';
 
 function App() {
-  document.title = "Robotic-Tac-Toe";
+  document.title = "Merry Christmas Steve";
   return (
     <Router>
     <div className="App">
-      <Navbar />
       <div className="content">
         <Switch>
           <Route exact path="/">
             <Home />
+            <Navbar />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route exact path="/santa">
+            <Santa />
+            <Navbar />
           </Route>
         </Switch>
       </div>

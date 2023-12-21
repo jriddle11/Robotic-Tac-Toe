@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom';
-
 const Navbar = () => {
     return ( 
-        <nav className="navbar">
-            <h1>Robotic-<span className='green'>Tac</span>-<span className='blue'>Toe</span></h1>
-            <div className="links">
-                <Link to="/"><span className='homeLink'>Home</span></Link>
-                <Link to="/about"><span className='aboutLink'>About</span></Link>
+            <div className="steveType">
+                <Link to="/" className='steveButton' onClick={() => {window.scroll(0, 0); }}><span className='link'>Badass</span></Link>
+                <Link to="/santa" className='steveButton' onClick={() => {window.scroll(0, 0); }}><span className='link double'>Merry<br/> Christmas</span></Link>
             </div>
-        </nav>
      );
 }
  
